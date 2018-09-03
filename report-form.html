@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <title>Safer Community</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/vendor.min.css">
+  <link rel="stylesheet" href="css/main.css"> 
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/flatpickr.min.css">
+
+   <!-- favicons -->
+	<link rel="shortcut icon" href="images/favicon.png" >
+
+</head>
+
+<body>
+  <header id="nav-header"> 
+   	<div class="row">
+	    <div class="logo">
+	      <a href="index.html"><img src="images/logo.png" alt=""/></a>
+	    </div>
+
+      <nav id="nav-wrap">         
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+          <span class="menu-icon">Menu</span>
+        </a>
+       	<a class="mobile-btn" href="#" title="Hide navigation">
+       		<span class="menu-icon">Menu</span>
+       	</a>            
+
+        <ul id="nav" class="nav">
+        	<li><a href="index.html">Home</a></li>
+          <li><a href="index.html#landing">Map</a></li>
+	        <li><a href="index.html#reports">Reports</a></li>
+          <li><a href="index.html#facts">Stats</a></li>
+		      <li class="new_btn"> <a href="report-form.html">New Report</a></li>    
+		      <li class="login_btn"> <a href="login.html">Login / Signup</a></li>
+			  </ul> 
+      </nav>   
+    </div><!-- end row -->				
+  </header> <!-- end header -->
+
+
+	<section>
+		<div class="report-form"  data-color="purple" id="report-form">
+			<form action="" method="">
+				<div class="report-header">
+			    <h1 class="report-title">Post New Report</h1>
+			  </div>
+		    
+		    <div class="tab-form">
+		    	<ul class="tab-navigation tab-underline"> 
+						<li><a href="#tab1">Victim's Report</a></li>
+						<li><a href="#tab2">Suspicious People</a></li> 
+						<li><a href="#tab3">Suspicious Vehicles</a></li> 
+			    </ul> 
+
+			    <div class="tab-content"> 
+				    <div id="tab1" class="tab-panel" style="display: block;"> 
+			  		  <p class="header1">VICTIM'S PROFILE</p>  
+
+	              <div class="choice" active data-toggle="report-radio" rel="tooltip" title="">
+	                  <input type="radio" name="profile" value="My profile" checked="ture">
+	                  <div class="icon1">
+	                      <i class="iconfont icon-profile"> <span>Use My Profile</span></i>
+	                  </div>
+	              </div>
+	         
+	              <div class="choice" data-toggle="report-radio" rel="tooltip" title="">
+	                  <input type="radio" name="profile" value="New profile">
+	                  <div class="icon1">
+	                  	<i class="iconfont icon-new-profile"> <span>New Profile</span></i>
+	                  </div>
+	              </div>
+
+					      <p class="header2">TIME OF OFFENCE</p>
+                <input class="time-offence DatePickerStyle" data-date-format="l, F j, Y">
+                <input class="time-offence2 TimePickerStyle" data-enable-time=true data-no-calendar=true value="11:00">
+					      <div class="clearfix"></div>
+						    <br>
+					      <p class="header3">STYLE OF OFFENCE</p>
+					      <p class="header-second">Identity</p>
+		            <select class="time-offence3">
+				        	<option>-Don’t know-</option>
+								  <option>Invited Friend</option>
+								  <option>Workman</option>
+								  <option>Visitor</option>
+								  <option>Boarder</option>
+								  <option>Stranger</option>
+				        </select>
+								<p class="header-second">Method of Entry</p>
+		            <select class="time-offence3">
+				        	<option>-Don’t know-</option>
+				        	<option>-Door-</option>
+								  <option>Forced Lock</option>
+								  <option>Door not locked</option>
+								  <option>Broke/cut door panel</option>
+								  <option>False pretences</option>
+								  <option>Had door key</option>
+								  <option>Pushed past person opening door</option>
+								  <option>Other Method</option>
+						    <option>-Window-</option>
+						      <option>Forced window lock/catch</option>
+								  <option>Broke/cut glass</option>
+								  <option>Window open/could be pushed open</option>
+								  <option>Other Method</option>
+				        </select>	
+
+								<p class="header-second">Stolen Items</p>
+								<div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon3">
+	                  <i class="iconfont "> <span>Nothing</span></i> 
+	                </div>
+		            </div>
+								<div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon3">
+	                  <i class="iconfont icon-jewelry"> <span>Jewelry</span></i> 
+	                </div>
+		            </div>
+								<div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon3">
+	                  <i class="iconfont icon-cash"> <span>Cash</span></i> 
+	                </div>
+		            </div>
+		            <div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon3">
+	                  <i class="iconfont icon-tools"> <span>Tools</span></i> 
+	                </div>
+		            </div>
+		            <div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon2_5">
+	                  <i class="iconfont icon-creditcard"> <span>Credit cards</span></i> 
+	                </div>
+		            </div>
+		            		            <div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon2_5">
+	                  <i class="iconfont icon-furniture"> <span>Household goods</span></i> 
+	                </div>
+		            </div>
+		            	            <div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon2_5">
+	                  <i class="iconfont icon-food"> <span>Food/Alcohol</span></i> 
+	                </div>
+		            </div>
+		            <div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon2">
+	                  <i class="iconfont icon-electrical"> <span>Electrical equipment</span></i> 
+	                </div>
+		            </div>
+		            <div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon2">
+	                  <i class="iconfont icon-i-document"> <span>Important documents</span></i> 
+	                </div>
+		            </div>
+		            <div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon2">
+	                  <i class="iconfont icon-car"> <span>Car/its accessories</span></i> 
+	                </div>
+		            </div>
+		            <div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon2">
+	                  <i class="iconfont icon-bike"> <span>Bicycle/its accessories</span></i> 
+	                </div>
+		            </div>
+		            <div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon2">
+	                  <i class="iconfont icon-kitchen"> <span>Kitchen equipment</span></i> 
+	                </div>
+		            </div>
+	
+		            <div class="choice" data-toggle="report-checkbox">
+		              <input type="checkbox"> 
+	                <div class="icon3">
+	                  <i class="iconfont icon-other"> <span>Others</span></i> 
+	                </div>
+		            </div>
+
+	              <p class="story-box">WHAT YOU WANT TO SAY</p>
+	              <ul><textarea class="time-offence3"> Share your story with the community... </textarea></ul>
+	              <input type="submit" class="report-submit" value="Submit">		
+				    </div> 
+				
+				  	<div id="tab2" class="tab-panel" style="display: none; "> 
+						  <p class="header1 header1-1">DESCRIBING DIRECTION</p> 
+						  <p class="header-second">Location</p>
+						  <select id="editable-select" class="time-offence3">
+				        <option> Computer Science Building, Plassey Park Rd, Sreelane, Castletroy, Co. Limerick</option>
+				      </select>
+
+              <p class="header-second">Direction of Travel</p>
+              <div class="time-offence3">
+	              <input type="text" name="direction of travel" placeholder="">
+              </div>
+
+              <p class="header2 header2-2">DESCRIBING PEOPLE</p> 
+						  <p class="header-second">Race</p>
+              <div class="choice" active data-toggle="report-radio" rel="tooltip" title="">
+                  <input type="radio" name="race" value="White">
+                  <div class="icon3">
+                      <i class="iconfont "> <span>White</span></i>
+                  </div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="">
+                <input type="radio" name="race" value="Black">
+                <div class="icon3">
+                    <i class="iconfont "> <span>Black</span></i>
+                </div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="">
+                <input type="radio" name="race" value="Other">
+                <div class="icon3">
+                  <i class="iconfont "> <span>Other</span></i>
+                </div>
+              </div>
+              <p class="header-second header-second2-2">Gender</p>
+              <div class="choice" active data-toggle="report-radio" rel="tooltip" title="">
+                <input type="radio" name="gender" value="Man">
+                <div class="icon3">
+                  <i class="iconfont "> <span>Man</span></i>
+                </div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="">
+                <input type="radio" name="gender" value="Women">
+                <div class="icon3">
+                    <i class="iconfont "> <span>Women</span></i>
+                </div>
+              </div>
+
+              <p class="header-second header-second2-2">Age <span>(estimated)</span></p>
+              <div class="choice" active data-toggle="report-radio" rel="tooltip" title="">
+                <input type="radio" name="age" value="- 20">
+                <div class="icon4">
+                  <i class="iconfont "> <span>- 20</span></i>
+                </div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="">
+                <input type="radio" name="age" value="20 s">
+                <div class="icon4">
+                    <i class="iconfont "> <span>20 s</span></i>
+                </div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="">
+                  <input type="radio" name="age" value="30 s">
+                  <div class="icon4">
+                      <i class="iconfont "> <span>30 s</span></i>
+                  </div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="">
+                <input type="radio" name="age" value="40 s">
+                <div class="icon4">
+                    <i class="iconfont "> <span>40 s</span></i>
+                </div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="">
+                <input type="radio" name="age" value="50 +">
+                <div class="icon4">
+                  <i class="iconfont "> <span>50 +</span></i>
+                </div>
+              </div>
+              <p class="header-second header-second2-2">Height <span>(estimated)</span></p>
+              <select class="time-offence">
+				        <option>---- Feet</option>
+				      </select>
+				      <select class="time-offence2">
+								<option>---- Inches</option>
+				      </select>
+				      <div class="clearfix"></div>
+					    <br>
+
+              <p class="header-second header-second2-2">Build</span></p>
+              <div class="time-offence3">
+	              <input type="text" name="build" placeholder="e.g. fat, husky, slim, muscular, etc">
+              </div>
+              <p class="header-second header-second2-2">Hair</span></p>
+              <div class="time-offence3">
+	              <input type="text" name="hair" placeholder="e.g. color, texture, hairline, style, etc">
+              </div>
+
+              <p class="story-box">OTHER APPEARANCE</p>
+	            <ul><textarea class="time-offence3"> Clothing, Scar/Marks/Tattos... </textarea></ul> 
+	            <input type="submit" class="report-submit" value="Submit">
+				  	</div> 
+
+						<div id="tab3" class="tab-panel" style="display: none; "> 			
+					    <p class="header1 header1-1">DESCRIBING DIRECTION</p> 
+						  <p class="header-second">Location</p>
+						  <select id="editable-select" class="time-offence3">
+				        <option> Computer Science Building, Plassey Park Rd, Sreelane, Castletroy, Co. Limerick</option>
+				      </select>
+
+              <p class="header-second">Direction of Travel</p>
+              <div class="time-offence3">
+	              <input type="text" name="direction of travel" placeholder="">
+              </div>
+             
+              <p class="header2 header2-2">DESCRIBING VEHICLE</p> 
+
+						  <p class="header-second header-second-translate">Color</p>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="White">
+                <input type="radio" name="color" value="White">
+                <div class="icon3 icon-circle icon-White icon8"></div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="Sliver">
+                <input type="radio" name="color" value="Sliver">
+                <div class="icon3 icon-circle icon-Sliver icon8"></div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="Light Blue">
+                <input type="radio" name="color" value="Light Blue">
+                <div class="icon3 icon-circle icon-Light-Blue icon8"></div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="Dark Blue">
+                <input type="radio" name="color" value="Dark Blue">
+                <div class="icon3 icon-circle icon-Dark-Blue icon8"></div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="Red">
+                <input type="radio" name="color" value="Red">
+                <div class="icon3 icon-circle icon-Red icon8"></div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="Grey">
+                <input type="radio" name="color" value="Grey">
+                <div class="icon3 icon-circle icon-Grey icon8"></div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="Brown">
+                <input type="radio" name="color" value="Brown">
+                <div class="icon3 icon-circle icon-Brown icon8"></div>
+              </div>
+                            <div class="choice" data-toggle="report-radio" rel="tooltip" title="Black">
+                <input type="radio" name="color" value="Black">
+                <div class="icon3 icon-circle icon-Black icon8"></div>
+              </div>
+              <div class="choice" data-toggle="report-radio" rel="tooltip" title="Other">
+                <input type="radio" name="color" value="Other">
+                <div class="icon3 icon-circle icon-Other icon8"></div>
+              </div>
+
+              <p class="header-second header-second2-2">Make</p>
+              <select class="time-offence3">
+				        <option>-- Don't Know --</option>
+				        <option>Ford</option>
+				      </select>
+
+              <p class="header-second">Model</p>
+              <select class="time-offence3">
+				        <option>-- Don't Know --</option>
+				        <option>Festa</option>
+				      </select>
+
+              <p class="header-second">Body</span></p>
+              <div class="time-offence3">
+	              <input type="text" name="body" placeholder="e.g. 2 door (Coupe), 4 door (Sedan), Hatch back, Wagon, Van, etc">
+              </div>
+              <p class="header-second header-second2-2">Plate Number</span></p>
+              <div class="time-offence3">
+              <input type="text" name="plate number" placeholder="relay as much as you can...">
+              </div>
+              <p class="story-box">OTHER APPEARANCE</p>
+	            <ul><textarea class="time-offence3"> Any damage and the damage location, sticks, etc </textarea></ul> 
+	            <input type="submit" class="report-submit" value="Submit">
+				    </div>   
+		      </div> 
+		    </div>
+	    </form><!-- /form -->	
+	  </div>
+	</section>
+
+  <!-- Footer -->
+  <footer class="log-in-footer">
+    <div class="row">      
+      <ul class="copyright">
+        <li>Copyright &copy; 2018.Wen Pan.</li> 
+      </ul>
+     </div> 
+  </footer> 
+
+	<!-- Java Script --> 
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>	
+	<script src="js/main.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/flatpickr.js"></script>
+	<script>
+  $(document).ready(function() { 
+    
+   //默认active 
+   $(".tab-panel").hide(); //隐藏全部的tab菜单内容
+   $("ul.tab-navigation li:first").addClass("active").show(); //对第一个li标签添加class="active属性" 
+   $(".tab-panel:first").show(); //显示第一个tab内容 
+     
+   //点击事件 
+   $("ul.tab-navigation li").click(function() { 
+    $("ul.tab-navigation li").removeClass("active"); //移除class="active"属性
+    $(this).addClass("active"); //添加class="active"到选择标签中 
+    $(".tab-panel").hide(); //隐藏全部标签内容 
+    var activeTab = $(this).find("a").attr("href"); //找到所属属性值来识别活跃选项卡和内容 
+    $(activeTab).fadeIn(); //使内容消失 
+    return false; 
+   }); 
+
+        $('[data-toggle="report-radio"]').click(function(){
+        report = $(this).closest('.report-form');
+        report.find('[data-toggle="report-radio"]').removeClass('active');
+        $(this).addClass('active');
+        $(report).find('[type="radio"]').removeAttr('checked');
+        $(this).find('[type="radio"]').attr('checked','true');
+    });
+  }); 
+
+    $('[data-toggle="report-checkbox"]').click(function(){
+        if( $(this).hasClass('active')){
+            $(this).removeClass('active');
+            $(this).find('[type="checkbox"]').removeAttr('checked');
+        } else {
+            $(this).addClass('active');
+            $(this).find('[type="checkbox"]').attr('checked','true');
+        }
+    });
+
+    document.getElementsByClassName("DatePickerStyle").flatpickr();　
+var now = new Date();
+    //格式化日，如果小于9，前面补0
+    var day = ("00" + now.getDate()).slice(-2);
+    //格式化月，如果小于9，前面补0
+    var month = ("00" + (now.getMonth() + 1)).slice(-2);
+    //拼装完整日期格式
+    var today = now.getFullYear() + "-" + (month) + "-" + (day);
+    $(".DatePickerStyle").val(today);
+
+  document.getElementsByClassName("TimePickerStyle").flatpickr({
+        enableTime: true,
+        locale: "zh",
+        minuteIncrement: 1,
+        time_24hr: true,
+        });
+
+
+	</script>
+
+</body>
+
+</html>
