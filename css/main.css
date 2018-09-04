@@ -534,7 +534,7 @@ ul#nav li.current a:after {
 
 /*-- landing slider --*/
 #landing-slider {
-	margin: 520px 0 54px;
+	margin: 120px 0 54px;
 }
 
 #landing-slider .slides .flex-caption {
@@ -603,24 +603,24 @@ ul#nav li.current a:after {
 }
 
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:2000px) {
 	.landing-content {
 		padding-bottom: 420px;
 	}
 
 	#landing-slider {
 		text-align: center;
-		margin: 122px 0 36px;
+		margin: 542px 0 36px;
 	}
 
 	#landing-slider .slides .flex-caption {
 		margin: 0 auto;
-		max-width: 750px;
+		max-width: 1750px;
 		width: 100%;
 	}
 
 	#landing-slider .slides .flex-caption h1 {
-		font: 46px/1.3 "raleway-bold", sans-serif;
+		font: 76px/1.3 "raleway-bold", sans-serif;
 	}
 
 	#landing-slider .slides .flex-caption h1::after {
