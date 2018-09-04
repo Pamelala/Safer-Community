@@ -212,15 +212,25 @@
       });
     });
 
-  $("#barna30").magnificPopup({
+  $("#Ballybane24").magnificPopup({
     items: {
       src: `
-        <div style="width:600px;margin:0 auto;padding:20px;background-color:white;color:black">
-        <h3 style="color:black">Barna</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-        vero repudiandae id, dolor quaerat magni fugit. Accusantium recusandae,
-        nam nobis asperiores expedita dicta consequuntur, eos, nesciunt nihil
-        pariatur enim quos.</p></div>
+        <div style="width:600px;margin:0 auto;padding:20px 30px 0 30px;background-color:white;color:black;margin-bottom:0;">
+        <h3 style="color:black">Ballybane</h3>
+        <p><div class="bgrid report-grid" ">
+            <div class="bg-white">
+              <div class="time-address">
+                <ul>
+                  <li style="color: black;">7 mins ago<img src="images/sus-people.png" class="sus-people"></li>
+                  <li><span>Castle Park Rd -</span></li>
+                  <li><span>Ballybane Rd, Ballybane, Galway</span></li>
+                </ul>
+                <p style="color: black;">by Liam<img src="images/chat.png" class="chat"><img src="images/follow.png" class="follow"></p>
+              </div> 
+              <p><span class="tag">White</span><span class="tag">Man</span><span class="tag">20 s</span><span class="tag">5'7"</span></p>
+              <p class="story" style="color: black;">I saw a suspicious looking person outside my neighbor’s house. Unfortunately by the time I had the opportunity to do so it was quite a while and I decided there wasn't much point.</p>
+            </div>
+          </div>.</p></div>
       `,
       type: "inline"
     }

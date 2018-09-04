@@ -1241,6 +1241,7 @@ ul#nav li.current a:after {
 
 
 .story, .story2{
+	font-size: 14px;
 	height: 130px;
 	color: #fff;
 
