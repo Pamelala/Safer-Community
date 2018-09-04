@@ -604,7 +604,36 @@ ul#nav li.current a:after {
 
 
 @media only screen and (max-width:1200px) {
+	.landing-content {
+		padding-bottom: 120px;
+	}
 
+	#landing-slider {
+		text-align: center;
+		margin: 122px 0 36px;
+	}
+
+	#landing-slider .slides .flex-caption {
+		margin: 0 auto;
+		max-width: 750px;
+		width: 100%;
+	}
+
+	#landing-slider .slides .flex-caption h1 {
+		font: 46px/1.3 "raleway-bold", sans-serif;
+	}
+
+	#landing-slider .slides .flex-caption h1::after {
+		margin-left: -100px;
+		left: 30%;
+	}
+
+	#landing-slider .slides .flex-caption h3 {
+		font: 16px/1.9 "merriweather-light", sans-serif;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media only screen and (max-width:1024px) {
