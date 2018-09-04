@@ -638,7 +638,10 @@ ul#nav li.current a:after {
     margin-left: 60%;
 }
 .head-center {
-	margin-top: 20%;
+	margin-top: 50px;
+}
+.log-in-wrapper{
+    height: 850px;
 }
 }
 
