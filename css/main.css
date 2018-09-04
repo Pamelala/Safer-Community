@@ -605,7 +605,7 @@ ul#nav li.current a:after {
 
 @media only screen and (max-width:2000px) {
 	.landing-content {
-		padding-bottom: 220px;
+		padding-bottom: 200px;
 	}
 
 	#landing-slider {
